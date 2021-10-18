@@ -25,8 +25,9 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/employees', [EmployeeController::class, 'index'])->name('employees');
     Route::get('/employees/create', [EmployeeController::class, 'create'])->name('employee-create');
-    Route::get('/employees/id', [EmployeeController::class, 'show'])->name('employee-show');
-    Route::get('/employees/id/edit', [EmployeeController::class, 'edit'])->name('employee-edit');
+    Route::get('/employees/{id}/edit', [EmployeeController::class, 'edit'])->name('employee-edit');
+    Route::get('/employees/{id}', [EmployeeController::class, 'show'])->name('employee-show');
+    Route::delete('/employees/{id}', [EmployeeController::class, 'destroy'])->name('employee-destroy');
 });
 
 require __DIR__ . '/auth.php';
