@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="mb-6 w">
-                        <a href="{{ route('employee-create') }}"
+                        <a href="{{ route('employees.create') }}"
                             class="bg-gray-700 rounded-md px-4 py-2 text-white text-md font-medium">Add Employee
                             Data</a>
                     </div>
@@ -28,11 +28,11 @@
                                 <td class=" px-4 py-2 border text-center">Ahmad Rizal Imaduddin</td>
                                 <td class="px-4 py-2 border w-3/12 text-center">
                                     <div class="py-2 inline-flex">
-                                        <a href="{{ route('employee-show') }}"
+                                        <a href="{{ route('employees.show') }}"
                                             class="bg-green-300 rounded-md px-2 py-2 mr-2 md:px-3 font-semibold">Show</a>
-                                        <a href="{{ route('employee-edit') }}"
+                                        <a href="{{ route('employees.edit') }}"
                                             class="bg-yellow-400 rounded-md px-2 py-2 mr-2 md:px-3 font-semibold">Update</a>
-                                        <a href="#"
+                                        <a href="{{ route('employees.destroy') }}"
                                             class="bg-red-500 rounded-md px-2 py-2 md:px-3 font-semibold">Delete</a>
                                     </div>
                                 </td>
