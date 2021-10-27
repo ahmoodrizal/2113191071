@@ -14,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        return view('employees');
+        return view('employees.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        return view('create');
+        return view('employees.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class EmployeeController extends Controller
      */
     public function show(employee $employee)
     {
-        return view('show');
+        return view('employees.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class EmployeeController extends Controller
      */
     public function edit(employee $employee)
     {
-        return view('edit');
+        return view('employees.edit');
     }
 
     /**
@@ -82,7 +82,7 @@ class EmployeeController extends Controller
     {
         $employee->delete();
 
-        return redirect()->route('index')
+        return redirect()->route('employees.index')
             ->with('success', 'Employee Deleted Successfully.');
     }
 }

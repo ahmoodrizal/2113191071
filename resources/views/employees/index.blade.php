@@ -23,11 +23,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="px-4 py-2 border">1</td>
-                                <td class="px-4 py-2 border">Ahmad Rizal Imaduddin</td>
-                                <td class="px-4 py-2 border">
-                                    <div class="py-2 inline-flex md:flex justify-start">
+                            <tr class="">
+                                <td class="px-4 py-2 border w-1/12 text-center">1</td>
+                                <td class=" px-4 py-2 border text-center">Ahmad Rizal Imaduddin</td>
+                                <td class="px-4 py-2 border w-3/12 text-center">
+                                    <div class="py-2 inline-flex">
                                         <a href="{{ route('employee-show') }}"
                                             class="bg-green-300 rounded-md px-2 py-2 mr-2 md:px-3 font-semibold">Show</a>
                                         <a href="{{ route('employee-edit') }}"
