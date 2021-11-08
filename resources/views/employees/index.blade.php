@@ -19,6 +19,7 @@
                             <tr class="bg-gray-100">
                                 <th class="px-4 py-2 border">No.</th>
                                 <th class="px-4 py-2 border">Name</th>
+                                <th class="px-4 py-2 border">Position</th>
                                 <th class="px-4 py-2 border">Action</th>
                             </tr>
                         </thead>
@@ -26,13 +27,14 @@
                             <tr class="">
                                 <td class="px-4 py-2 border w-1/12 text-center">1</td>
                                 <td class=" px-4 py-2 border text-center">Ahmad Rizal Imaduddin</td>
+                                <td class=" px-4 py-2 border text-center">Manager</td>
                                 <td class="px-4 py-2 border w-3/12 text-center">
                                     <div class="py-2 inline-flex">
-                                        <a href="{{ route('employees.show') }}"
+                                        <a href="#"
                                             class="bg-green-300 rounded-md px-2 py-2 mr-2 md:px-3 font-semibold">Show</a>
-                                        <a href="{{ route('employees.edit') }}"
+                                        <a href="#"
                                             class="bg-yellow-400 rounded-md px-2 py-2 mr-2 md:px-3 font-semibold">Update</a>
-                                        <a href="{{ route('employees.destroy') }}"
+                                        <a href="#"
                                             class="bg-red-500 rounded-md px-2 py-2 md:px-3 font-semibold">Delete</a>
                                     </div>
                                 </td>
