@@ -15,7 +15,7 @@
                     </div>
                 @endif
                 <div class="mb-4">
-                    <x-button wire:click="create()">{{ 'Add Authors Data' }}</x-button>
+                    <x-button wire:click="create()">{{ 'Add Employees Data' }}</x-button>
                     @if ($isModal)
                         @include('livewire.create')
                     @endif
