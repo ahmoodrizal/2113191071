@@ -21,6 +21,11 @@
                         {{ __('Employees') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('employees-livewire')" :active="request()->routeIs('employees-livewire')">
+                        {{ __('Employees Livewire') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -80,6 +85,10 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('employees.index')" :active="request()->routeIs('employees.index')">
                 {{ __('Employees') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('employees-livewire')"
+                :active="request()->routeIs('employees-livewire')">
+                {{ __('Employees Livewire') }}
             </x-responsive-nav-link>
         </div>
 

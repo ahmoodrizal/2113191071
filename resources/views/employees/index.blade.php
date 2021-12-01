@@ -53,7 +53,7 @@
                                                     @csrf
                                                     @method('DELETE')
                                                     <x-button
-                                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"
+                                                        onclick="confirm_alert()"
                                                         class="bg-red-500 rounded-md px-2 py-2 md:px-3 font-bold hover:bg-red-600">
                                                         Delete</x-button>
                                                 </form>
@@ -74,3 +74,24 @@
         </div>
     </div>
 </x-app-layout>
+<script>
+    function confirm_alert() {
+        Swal.fire({
+            title: 'Apa anda yakin?',
+            text: "Data Buku akan terhapus permanen",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Hapus Data'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+    }
+</script>

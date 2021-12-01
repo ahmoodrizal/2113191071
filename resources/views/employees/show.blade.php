@@ -12,10 +12,6 @@
                     <table class="w-full table-fixed">
                         <tbody>
                             <tr>
-                                <td class="px-4 py-2 font-bold">Employee Id</td>
-                                <td>{{ $employee->emp_id }}</td>
-                            </tr>
-                            <tr>
                                 <td class="px-4 py-2 font-bold">Name</td>
                                 <td>{{ $employee->emp_name }}</td>
                             </tr>
